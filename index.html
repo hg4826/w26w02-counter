@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>카운터</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>카운터</h1>
-  <div id="count">0</div>
-  <button id="dec">- 1</button>
-  <button id="reset">Reset</button>
-  <button id="inc">+ 1</button>
 
-  <script src="script.js"></script>
+<body>
+    <main class="timer-container">
+        <h1>Pomodoro</h1>
+
+        <div class="mode-buttons">
+            <button id="focusMode" class="mode-btn active">집중</button>
+            <button id="breakMode" class="mode-btn">휴식</button>
+        </div>
+
+        <div class="timer">
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </div>
+
+        <p id="status">집중할 시간입니다!</p>
+
+        <div class="control-buttons">
+            <button id="startBtn">시작</button>
+            <button id="resetBtn">초기화</button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
